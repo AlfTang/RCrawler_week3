@@ -21,8 +21,7 @@ saveHTML(result)
 ##########################################################
 
 cookie <- set_cookies(
-  ' PHPSESSID'='15244387_dc9353b9f969b83f657db3a5f4eda801',
-  ' device_token'='cf1da211b29f1d51415894fe01282ae5'
+  ' PHPSESSID'='15244387_dc9353b9f969b83f657db3a5f4eda801'
 )## cookie need to be changed everytime you run this file
 
 response.after <- httr::GET('http://www.pixiv.net/', cookie)
