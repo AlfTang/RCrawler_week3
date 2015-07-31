@@ -18,6 +18,5 @@ saveHTML(result)
 # Parser
 ##########################
 library(XML)
-xml <- htmlParse(res)
-result <- xml['//div[@class="title"]//text()']
+result <- xpathSApply(content(res), '//div[@class="title"]//text()', xmlValue)
 print(result)
